@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-    content: [
-      "./index.html",
-      "./src/**/*.{js,jsx}",
-    ],
-    theme: {
-      extend: {},
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'planora-primary': '#7C3AED',
+        'planora-secondary': '#3B82F6',
+      },
     },
-    plugins: [],
-  }
-  
+  },
+  plugins: [],
+}
